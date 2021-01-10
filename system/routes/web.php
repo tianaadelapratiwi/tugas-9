@@ -79,6 +79,3 @@ Route::get('/produk_single', function () {
     return view('produk_single');
 });
 
-//upload gambar
-Route::get('image-upload', [ ImageUploadController::class, 'imageUpload' ])->name('image.upload');
-Route::post('image-upload', [ ImageUploadController::class, 'imageUploadPost' ])->name('image.upload.post');
